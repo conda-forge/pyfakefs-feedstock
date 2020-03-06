@@ -1,5 +1,5 @@
 {% set name = "pyfakefs" %}
-{% set version = "3.7.1" %}
+{% set version = "3.7.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1eb68bb250cc14310a6e33c197cbe2c8d93832b543f534e29b58286712f7e2b2
+  sha256: 735ce6a71f26ead335df8a1f2c1cc8355ef091d98ffdc3bf73a5a3b0214e055e
 
 build:
   noarch: python
   number: 0
   # Note: --no-deps is currently required due to https://github.com/conda/conda-build/issues/3254
   # Once resolved, it should be removed.
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -31,7 +31,7 @@ about:
   home: https://github.com/jmcgeheeiv/pyfakefs
   license: Apache-2.0
   license_file: COPYING
-  summary: 'A fake file system that mocks the Python file system modules.'
+  summary: A fake file system that mocks the Python file system modules.
 
   description: |
     pyfakefs implements a fake file system that mocks the Python file system
