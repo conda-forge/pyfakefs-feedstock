@@ -29,7 +29,7 @@ test:
   commands:
     - pip check
     - python -m pyfakefs.tests.all_tests
-    - pytest pyfakefs/pytest_tests/pytest_plugin_test.py
+    - pytest pyfakefs/pytest_tests
   requires:
     - pip
     - pytest
