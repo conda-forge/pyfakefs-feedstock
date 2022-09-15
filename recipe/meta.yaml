@@ -22,7 +22,7 @@ requirements:
     - python >=3.7
 
 test:
-  source:
+  source_files:
     - pyfakefs 
   imports:
     - pyfakefs
