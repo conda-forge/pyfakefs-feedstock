@@ -1,5 +1,5 @@
 {% set name = "pyfakefs" %}
-{% set version = "4.7.0" %}
+{% set version = "5.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f22d30d93d2989bf2d2c67b606a14cbab2df0be912c09dcdb590ea4931073ade
+  sha256: 19d1d8f1ee520891d78b6ed05c2078e0792d545f83dee33461fbaa5cc72e187d
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -23,7 +23,7 @@ requirements:
 
 test:
   source_files:
-    - pyfakefs 
+    - pyfakefs
   imports:
     - pyfakefs
   commands:
