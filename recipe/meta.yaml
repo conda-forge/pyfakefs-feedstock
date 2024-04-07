@@ -1,5 +1,5 @@
 {% set name = "pyfakefs" %}
-{% set version = "5.3.5" %}
+{% set version = "5.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7cdc500b35a214cb7a614e1940543acc6650e69a94ac76e30f33c9373bd9cf90
+  sha256: 969096d84b5b986f4f84399d03f4900381a3880d03adcdbd609566a4baf39bf9
 
 build:
   noarch: python
