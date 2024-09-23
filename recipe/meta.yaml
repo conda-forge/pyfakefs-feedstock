@@ -11,13 +11,14 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
     - python >=3.7
+    - setuptools
   run:
     - python >=3.7
 
@@ -33,8 +34,8 @@ test:
     - pip
 
 about:
-  home: https://github.com/jmcgeheeiv/pyfakefs
-  doc_url: http://jmcgeheeiv.github.io/pyfakefs/
+  home: https://github.com/pytest-dev/pyfakefs
+  doc_url: https://pytest-pyfakefs.readthedocs.io/
   license: Apache-2.0
   license_file: COPYING
   summary: A fake file system that mocks the Python file system modules.
@@ -43,7 +44,7 @@ about:
     modules. Using pyfakefs, your tests operate on a fake file system in
     memory without touching the real disk. The software under test requires
     no modification to work with pyfakefs. pyfakefs works with Linux, Windows
-    and MacOS.
+    and macOS.
 
 extra:
   recipe-maintainers:

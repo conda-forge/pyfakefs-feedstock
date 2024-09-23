@@ -3,19 +3,19 @@ About pyfakefs-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyfakefs-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/jmcgeheeiv/pyfakefs
+Home: https://github.com/pytest-dev/pyfakefs
 
 Package license: Apache-2.0
 
 Summary: A fake file system that mocks the Python file system modules.
 
-Documentation: http://jmcgeheeiv.github.io/pyfakefs/
+Documentation: https://pytest-pyfakefs.readthedocs.io/
 
 Pyfakefs implements a fake file system that mocks the Python file system
 modules. Using pyfakefs, your tests operate on a fake file system in
 memory without touching the real disk. The software under test requires
 no modification to work with pyfakefs. pyfakefs works with Linux, Windows
-and MacOS.
+and macOS.
 
 
 Current build status
