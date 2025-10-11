@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pyfakefs
-  version: "5.9.2"
+  version: "5.9.3"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 66c5c6ccd4097b484f8782f9a5078fee0533d465e0d9caf594c9157d54382553
+  sha256: b458b11abc8862d4d8500816170a9b25e10d07437332b9dffd651069f3d4c40c
 
 build:
   number: 0
@@ -21,7 +21,7 @@ requirements:
   host:
     - pip
     - python ${{ python_min }}.*
-    - setuptools >=45
+    - setuptools >=61.2
   run:
     - python >=${{ python_min }}
 
