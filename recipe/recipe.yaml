@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pyfakefs
-  version: "5.9.3"
+  version: "5.10.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: b458b11abc8862d4d8500816170a9b25e10d07437332b9dffd651069f3d4c40c
+  sha256: 68b33b8d9338ed332ad0c809417b875559c2e8ac10972fce248cb19b89d325fa
 
 build:
   number: 0
