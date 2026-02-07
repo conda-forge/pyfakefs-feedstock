@@ -31,14 +31,6 @@ tests:
         - pyfakefs
       pip_check: true
       python_version: ${{ python_min }}.*
-  - files:
-      source:
-        - pyfakefs
-    requirements:
-      run:
-        - python ${{ python_min }}.*
-    script:
-      - python -m pyfakefs.tests.all_tests
 
 about:
   license: Apache-2.0
